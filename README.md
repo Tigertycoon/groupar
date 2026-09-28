@@ -65,3 +65,4 @@ GitHub Actions runs the platform checks. Unity compilation, scene references, ma
 ## License
 
 The authored code, documentation and synthetic fixtures are [MIT licensed](LICENSE). Unity and npm dependencies retain their own licenses and are installed separately; see [third-party notices](THIRD_PARTY_NOTICES.md).
+Independent reimplementation: I had previously implemented this concept as an internal prototype for an employer; this code has been completely rewritten and contains no elements from that version.
