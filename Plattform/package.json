@@ -1,0 +1,14 @@
+{
+  "name": "groupar-platform-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node api/server.mjs",
+    "start": "node api/server.mjs",
+    "test": "node --test api/server.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

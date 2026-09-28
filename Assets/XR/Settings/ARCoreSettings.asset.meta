@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4a652e4a45c2f481eb6a71bee38b15a3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168348
+  packageName: Business Card 3D and AR with Multiple Image Tracking
+  packageVersion: 4.0
+  assetPath: Assets/XR/Settings/ARCoreSettings.asset
+  uploadId: 855298

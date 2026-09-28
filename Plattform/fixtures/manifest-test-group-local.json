@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "1.0",
+  "manifestVersion": 1,
+  "manifestId": "mfst_fixture_test_group_v1",
+  "generatedAt": "2026-09-28T00:00:00Z",
+  "etag": "grp_fixture_ar_test-v1",
+  "organization": {
+    "id": "org_fixture_school",
+    "name": "Fixture School"
+  },
+  "group": {
+    "id": "grp_fixture_ar_test",
+    "name": "AR Fixture Test Group"
+  },
+  "cache": {
+    "maxAgeSeconds": 3600,
+    "staleWhileRevalidateSeconds": 86400
+  },
+  "limits": {
+    "activeTargetCount": 100,
+    "maxMovingImages": 1
+  },
+  "content": [
+    {
+      "contentId": "med_fixture_box_scene_image",
+      "type": "image",
+      "role": "primary",
+      "url": "http://localhost:8787/derived/org_fixture_school/grp_fixture_ar_test/art_fixture_feature_box/rev_fixture_feature_box_001/media/med_fixture_box_scene_image/image_2048.png",
+      "contentType": "image/png",
+      "byteSize": 2593,
+      "sha256": "0f506b43eec9699d564974948110fee069db1e83f09bbea88ca527d90562d500",
+      "metadata": {
+        "placement": "onImage",
+        "scale": 1.0,
+        "loop": false
+      }
+    },
+    {
+      "contentId": "med_fixture_person_video",
+      "type": "video",
+      "role": "primary",
+      "url": "http://localhost:8787/derived/org_fixture_school/grp_fixture_ar_test/art_fixture_person_video/rev_fixture_person_video_001/media/med_fixture_person_video/video_1080p.mp4",
+      "contentType": "video/mp4",
+      "byteSize": 46848,
+      "sha256": "a1052d1a7a421b1eba2f18ab89b249953d21ca89245317e6081b7a1345a2a212",
+      "metadata": {
+        "placement": "onImage",
+        "scale": 1.0,
+        "loop": true,
+        "autoplay": true
+      }
+    },
+    {
+      "contentId": "med_fixture_person_thumbnail",
+      "type": "image",
+      "role": "thumbnail",
+      "url": "http://localhost:8787/derived/org_fixture_school/grp_fixture_ar_test/art_fixture_person_video/rev_fixture_person_video_001/media/med_fixture_person_thumbnail/thumb_512.png",
+      "contentType": "image/png",
+      "byteSize": 2604,
+      "sha256": "0e95913d48f3ccddaf50fbbcc0337face232099bd9d6a3f304e9cbd1675cac89",
+      "metadata": {}
+    },
+    {
+      "contentId": "med_fixture_logo_debug_image",
+      "type": "image",
+      "role": "primary",
+      "url": "http://localhost:8787/derived/org_fixture_school/grp_fixture_ar_test/art_fixture_logo_debug/rev_fixture_logo_debug_001/media/med_fixture_logo_debug_image/debug_logo.png",
+      "contentType": "image/png",
+      "byteSize": 2598,
+      "sha256": "c2003359d7207627702bbe9c4fb96773d811cda8763884c924f346c9328b7a2c",
+      "metadata": {
+        "placement": "onImage",
+        "scale": 0.65,
+        "loop": false,
+        "fixturePurpose": "debug_image_fallback"
+      }
+    },
+    {
+      "contentId": "med_fixture_text_debug_image",
+      "type": "image",
+      "role": "primary",
+      "url": "http://localhost:8787/derived/org_fixture_school/grp_fixture_ar_test/art_fixture_text_debug/rev_fixture_text_debug_001/media/med_fixture_text_debug_image/debug_text.png",
+      "contentType": "image/png",
+      "byteSize": 2601,
+      "sha256": "82423b03b548d1237b249c2d3cbc12985bd0ad4bf366d14360052f6b0a023e72",
+      "metadata": {
+        "placement": "onImage",
+        "scale": 1.0,
+        "loop": false
+      }
+    }
+  ],
+  "targets": [
+    {
+      "targetId": "trg_fixture_feature_box",
+      "artworkId": "art_fixture_feature_box",
+      "revisionId": "rev_fixture_feature_box_001",
+      "triggerImageId": "tri_fixture_feature_box_001",
+      "title": "Synthetic pipeline target 1",
+      "locale": "de-DE",
+      "tags": [
+        "fixture",
+        "image",
+        "features2d"
+      ],
+      "updatedAt": "2026-05-30T18:00:00Z",
+      "physicalWidthMeters": 0.18,
+      "image": {
+        "url": "http://localhost:8787/derived/org_fixture_school/grp_fixture_ar_test/art_fixture_feature_box/rev_fixture_feature_box_001/trigger/tri_fixture_feature_box_001/trigger_normalized.png",
+        "contentType": "image/png",
+        "width": 256,
+        "height": 256,
+        "byteSize": 2594,
+        "sha256": "6a9694aab6e9163dfc4aceece065c4f645336124453b71a3e8a847ad0dd98389"
+      },
+      "quality": {
+        "status": "warning",
+        "score": 0,
+        "featureCount": 0,
+        "arcoreScore": 0,
+        "warnings": [
+          "synthetic_fixture_not_device_validated"
+        ]
+      },
+      "contentIds": [
+        "med_fixture_box_scene_image"
+      ],
+      "primaryContentId": "med_fixture_box_scene_image"
+    },
+    {
+      "targetId": "trg_fixture_scene_box",
+      "artworkId": "art_fixture_scene_box",
+      "revisionId": "rev_fixture_scene_box_001",
+      "triggerImageId": "tri_fixture_scene_box_001",
+      "title": "Synthetic pipeline target 2",
+      "locale": "de-DE",
+      "tags": [
+        "fixture",
+        "image",
+        "debug"
+      ],
+      "updatedAt": "2026-05-30T18:00:00Z",
+      "physicalWidthMeters": 0.22,
+      "image": {
+        "url": "http://localhost:8787/derived/org_fixture_school/grp_fixture_ar_test/art_fixture_scene_box/rev_fixture_scene_box_001/trigger/tri_fixture_scene_box_001/trigger_normalized.png",
+        "contentType": "image/png",
+        "width": 256,
+        "height": 256,
+        "byteSize": 2604,
+        "sha256": "539bb74a791bda6365d5bcdb64c2ff0ab598f78336767b582f492bb8cafaf01c"
+      },
+      "quality": {
+        "status": "warning",
+        "score": 0,
+        "featureCount": 0,
+        "arcoreScore": 0,
+        "warnings": [
+          "synthetic_fixture_not_device_validated"
+        ]
+      },
+      "contentIds": [
+        "med_fixture_logo_debug_image"
+      ],
+      "primaryContentId": "med_fixture_logo_debug_image"
+    },
+    {
+      "targetId": "trg_fixture_person_video",
+      "artworkId": "art_fixture_person_video",
+      "revisionId": "rev_fixture_person_video_001",
+      "triggerImageId": "tri_fixture_person_video_001",
+      "title": "Synthetic pipeline target 3",
+      "locale": "de-DE",
+      "tags": [
+        "fixture",
+        "video",
+        "thumbnail"
+      ],
+      "updatedAt": "2026-05-30T18:00:00Z",
+      "physicalWidthMeters": 0.2,
+      "image": {
+        "url": "http://localhost:8787/derived/org_fixture_school/grp_fixture_ar_test/art_fixture_person_video/rev_fixture_person_video_001/trigger/tri_fixture_person_video_001/trigger_normalized.png",
+        "contentType": "image/png",
+        "width": 256,
+        "height": 256,
+        "byteSize": 2598,
+        "sha256": "5a8570df0789a791c8f18ead4ace26f7d3e499b645c0182f031c9f863e94842d"
+      },
+      "quality": {
+        "status": "warning",
+        "score": 0,
+        "featureCount": 0,
+        "arcoreScore": 0,
+        "warnings": [
+          "synthetic_fixture_not_device_validated"
+        ]
+      },
+      "contentIds": [
+        "med_fixture_person_video",
+        "med_fixture_person_thumbnail"
+      ],
+      "primaryContentId": "med_fixture_person_video"
+    },
+    {
+      "targetId": "trg_fixture_text_debug",
+      "artworkId": "art_fixture_text_debug",
+      "revisionId": "rev_fixture_text_debug_001",
+      "triggerImageId": "tri_fixture_text_debug_001",
+      "title": "Synthetic pipeline target 4",
+      "locale": "de-DE",
+      "tags": [
+        "fixture",
+        "image",
+        "text"
+      ],
+      "updatedAt": "2026-05-30T18:00:00Z",
+      "physicalWidthMeters": 0.16,
+      "image": {
+        "url": "http://localhost:8787/derived/org_fixture_school/grp_fixture_ar_test/art_fixture_text_debug/rev_fixture_text_debug_001/trigger/tri_fixture_text_debug_001/trigger_normalized.png",
+        "contentType": "image/png",
+        "width": 256,
+        "height": 256,
+        "byteSize": 2596,
+        "sha256": "67d999cda812d5d6761d855f303d17875e69508378426f09bbe665b4ed752f78"
+      },
+      "quality": {
+        "status": "warning",
+        "score": 0,
+        "featureCount": 0,
+        "arcoreScore": 0,
+        "warnings": [
+          "synthetic_fixture_not_device_validated"
+        ]
+      },
+      "contentIds": [
+        "med_fixture_text_debug_image"
+      ],
+      "primaryContentId": "med_fixture_text_debug_image"
+    }
+  ],
+  "deletedTargetIds": [
+    "trg_fixture_removed_legacy"
+  ],
+  "requiredApp": {
+    "minVersion": "1.0.0",
+    "recommendedVersion": "1.2.0"
+  }
+}

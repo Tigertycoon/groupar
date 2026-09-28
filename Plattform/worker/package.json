@@ -1,0 +1,29 @@
+{
+  "name": "@plattform/upload-processing-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "check:fixtures": "node scripts/check-contract-fixtures.mjs",
+    "check:jobs": "npm run build && node scripts/check-worker-job-contracts.mjs",
+    "worker": "tsx src/index.ts",
+    "check:images": "npm run build && node scripts/check-image-processing.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.600.0",
+    "bullmq": "^5.8.7",
+    "execa": "^9.3.0",
+    "file-type": "22.1.1",
+    "ioredis": "^5.4.1",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,5 @@
+PASS — Unity 6000.3.19f1
+Scene: no missing scripts; AR components present.
+Manifest: 4 targets, 5 contents; primary references resolve.
+Four actual PNGs decode and match SHA256; hash corruption is rejected.
+Physical tracking and media playback were not tested.

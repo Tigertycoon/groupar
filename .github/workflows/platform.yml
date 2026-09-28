@@ -1,0 +1,31 @@
+name: Platform checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  platform:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: Plattform/worker/package-lock.json
+      - name: API integration tests
+        run: npm --prefix Plattform test
+      - name: Install worker dependencies
+        run: npm --prefix Plattform/worker ci
+      - name: TypeScript and fixture contracts
+        run: |
+          npm --prefix Plattform/worker run check
+          npm --prefix Plattform/worker run check:fixtures
+      - name: Worker jobs and real image processing
+        run: |
+          npm --prefix Plattform/worker run check:jobs
+          npm --prefix Plattform/worker run check:images
